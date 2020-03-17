@@ -1,6 +1,8 @@
 <template>
   <div class='container'>
     <TabCard :tabs="tabs" :initialTab="initialTab">
+      
+      <!-- 1 -->
       <template slot="tab-head-ALSOFRANK">
         ALSOFRANK
       </template>
@@ -16,6 +18,9 @@
           elderly parents.
         </p>
       </template>
+
+      <!-- 2 -->
+
       <template slot="tab-head-Frank">
         Frank
       </template>
@@ -26,10 +31,12 @@
           Mrs Evans, and the younger sister of Petunia Evans.
         </p>
         <p class="description">
-DUMB
+        DUMB
         </p>
       </template>
 
+
+        <!-- 3 -->
       <template slot="tab-head-Links">
         Links
 
@@ -40,6 +47,7 @@ DUMB
           <a href="https://app.netlify.com/sites/tender-goldwasser-3cbe93/overview">Netlify</a>
         </p>
       </template>
+
     </TabCard>
   </div>
 </template>
