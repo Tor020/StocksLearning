@@ -30,13 +30,14 @@ DUMB
         </p>
       </template>
 
-      <template slot="tab-head-snape">
-        Dumb Harry Potter Shit
+      <template slot="tab-head-Links">
+        Links
 
       </template>
-      <template slot="tab-panel-snape">
+      <template slot="tab-panel-Links">
         <p class="description">
-Dumb Harry Potter Shit
+          <a href="https://github.com/Tor020/StocksLearning">Github</a>
+          <a href="https://app.netlify.com/sites/tender-goldwasser-3cbe93/overview">Netlify</a>
         </p>
       </template>
     </TabCard>
@@ -54,7 +55,7 @@ export default {
   data() {
     return {
       initialTab: 'ALSOFRANK',
-      tabs: ['ALSOFRANK', 'Frank', 'snape']
+      tabs: ['ALSOFRANK', 'Frank', 'Links']
     };
   }
 };
