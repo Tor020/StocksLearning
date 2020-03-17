@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div class='container'>
     <TabCard :tabs="tabs" :initialTab="initialTab">
-      <template slot="tab-head-james">
-        James
+      <template slot="tab-head-ALSOFRANK">
+        ALSOFRANK
       </template>
-      <template slot="tab-panel-james">
-        <h2 class="title">James Potter</h2>
+      <template slot="tab-panel-ALSOFRANK">
+        <h2 class="title">ALSOFRANK </h2>
         <p class="description">
-          James Potter is a young wizard who fought against Voldemort in the
-          1970s, only to be killed along with his wife Lily while trying to
+          FRANK  is a young wizard who fought against DUM in the
+          1970s, only to be killed along with his wife FRANKIE while trying to
           protect their 15-month-old son Harry.
         </p>
         <p class="description">
@@ -20,26 +20,24 @@
         Frank
       </template>
       <template slot="tab-panel-Frank">
-        <h2 class="title">Lily Potter</h2>
+        <h2 class="title">FRANK</h2>
         <p class="description">
           Lily J. Potter was a Muggle-born witch, the younger daughter of Mr and
           Mrs Evans, and the younger sister of Petunia Evans.
         </p>
         <p class="description">
-          She sacrificed herself to save Harry and caused Voldemort to loose the
-          <strong>First Wizarding War</strong>.
+DUMB
         </p>
       </template>
+
       <template slot="tab-head-snape">
-        Snape
+        Dumb Harry Potter Shit
+
       </template>
       <template slot="tab-panel-snape">
-        <h3 class="title">no description needed</h3>
-        <img
-          class="image"
-          src="https://media1.tenor.com/images/b58f4b6f5cc71fb1d9663c66d0b42cb7/tenor.gif"
-          alt=""
-        />
+        <p class="description">
+Dumb Harry Potter Shit
+        </p>
       </template>
     </TabCard>
   </div>
@@ -55,8 +53,8 @@ export default {
   },
   data() {
     return {
-      initialTab: 'james',
-      tabs: ['james', 'Frank', 'snape']
+      initialTab: 'ALSOFRANK',
+      tabs: ['ALSOFRANK', 'Frank', 'snape']
     };
   }
 };
