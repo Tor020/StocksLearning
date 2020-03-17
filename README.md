@@ -5,6 +5,8 @@
 yarn install
 ```
 
+[Actual Website Layout](https://codesandbox.io/s/3r01nk5q41)
+
 ### Compiles and hot-reloads for development
 ```
 yarn serve
