@@ -1,56 +1,63 @@
 <template>
-  <section class="section">
-    <div class="container">
-
-      <div class="columns">
-
-        <div class="column">
-        <tabs>
-            <tab name="About Us" :selected="true">
-                <h1>Here is the content for the about us tab.</h1>
-            </tab>
-
-            <tab name="About Our Culture">
-                <h1>Here is the content for the about our culture tab.</h1>
-            </tab>
-
-            <tab name="About Our Vision">
-                <h1>Here is the content for the about our vision tab.</h1>
-            </tab>
-        </tabs>
-        </div>
-        
-
-
-      </div>
-
-    </div>
-  </section>
+  <div>
+    <TabCard :tabs="tabs" :initialTab="initialTab">
+      <template slot="tab-head-james">
+        James
+      </template>
+      <template slot="tab-panel-james">
+        <h2 class="title">James Potter</h2>
+        <p class="description">
+          James Potter is a young wizard who fought against Voldemort in the
+          1970s, only to be killed along with his wife Lily while trying to
+          protect their 15-month-old son Harry.
+        </p>
+        <p class="description">
+          He was a descendant of Ignotus Peverell and the only child of wealthy,
+          elderly parents.
+        </p>
+      </template>
+      <template slot="tab-head-Frank">
+        Frank
+      </template>
+      <template slot="tab-panel-Frank">
+        <h2 class="title">Lily Potter</h2>
+        <p class="description">
+          Lily J. Potter was a Muggle-born witch, the younger daughter of Mr and
+          Mrs Evans, and the younger sister of Petunia Evans.
+        </p>
+        <p class="description">
+          She sacrificed herself to save Harry and caused Voldemort to loose the
+          <strong>First Wizarding War</strong>.
+        </p>
+      </template>
+      <template slot="tab-head-snape">
+        Snape
+      </template>
+      <template slot="tab-panel-snape">
+        <h3 class="title">no description needed</h3>
+        <img
+          class="image"
+          src="https://media1.tenor.com/images/b58f4b6f5cc71fb1d9663c66d0b42cb7/tenor.gif"
+          alt=""
+        />
+      </template>
+    </TabCard>
+  </div>
 </template>
 
-<style lang="scss">
-</style>
-
 <script>
-import Tabs from "./components/Tabs.vue";
-import Tab from "./components/Tab.vue"
+import TabCard from './components/TabCard';
 
 export default {
+  name: 'App',
   components: {
-    Tabs,
-    Tab
+    TabCard
   },
   data() {
     return {
-      tabs: [],
-      otherExample: true
+      initialTab: 'james',
+      tabs: ['james', 'Frank', 'snape']
     };
-  },
-  created(){
-    this.tabs = this.$children
-  },
-  mounted(){
-    console.log(this.$children)
   }
 };
 </script>
