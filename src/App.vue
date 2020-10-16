@@ -8,7 +8,9 @@
       </template>
       <template slot="tab-panel-ALSOFRANK">
         <h2 class="title">ALSOFRANK </h2>
+        
         <p class="description">
+        <a href="https://babylonbee.com/">Funny haha meme christian satire</a>
         https://babylonbee.com/
           FRANK  is a young wizard who fought against DUM in the
           1970s, only to be killed along with his wife FRANKIE while trying to
